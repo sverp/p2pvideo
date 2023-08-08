@@ -1,0 +1,12 @@
+body{ 
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.video-grid video{
+    padding: 10px 10px 10px 10px;
+    border: 1px solid black;
+    height: 300px;
+    width: 300px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>video call</title>
+    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore-compat.js"></script>
+</head>
+<body>
+
+    <div class="entryInfo">
+        <input id="idIn" placeholder="enter id">
+        <button onclick="createRoom()">start call</button>
+        <button onclick="joinRoom()">join call</button>
+        
+        <p id="roomIdText"></p>
+    </div>
+
+    <div class="video-grid">
+        <video id="localVideo"></video>
+        <video id="remoteVideo"></video>
+    </div>
+
+    <div class="msg-grid">
+        
+    </div>
+    <script src="https://unpkg.com/peerjs@1.4.7/dist/peerjs.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
